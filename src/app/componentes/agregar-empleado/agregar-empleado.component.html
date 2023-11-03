@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-header">
+        Agregar Empleado
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formularioDeEmpleados" (ngSubmit)="enviarDatos()">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre: </label>
+                <input type="text" formControlName="nombre" class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="Ingresa el nombre:">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Correo: </label>
+                <input type="email" class="form-control" name="correo" id="correo" aria-describedby="helpId" placeholder="Ingresa el correo">
+            </div>
+            <div class="btn-group" role="group" aria-label="">
+                <button type="submit" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-primary">Regresar</button>
+            </div>
+        </form>
+    </div>
+</div>
